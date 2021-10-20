@@ -1,0 +1,31 @@
+.padre-Detalles-Container {
+    position: absolute;
+    background-color: #8e60ff;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    height: 193px;
+    transform: translate(0, -8px);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.padre-Detalles-Container.active {
+    transform: translate(0, -200px);
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.btn-Detalles {
+    cursor: pointer;
+    border: none;
+    margin: 0px 0px 0px 85%;
+    background-color: #8e60ff;
+    color: white;
+    font-size: 2rem;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,7 @@
+.listado-De-Post {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 7%;
+    row-gap: .5%;
+    padding-top: 5%;
+}

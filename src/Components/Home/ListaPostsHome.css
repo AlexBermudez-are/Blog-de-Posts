@@ -1,0 +1,32 @@
+.Padre-Lista-Post {
+    position: relative;
+}
+
+.body-Card-Lista-Post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-Title-Lista-Post {
+    text-align: center;
+}
+
+.container-Btns-Post-Lista {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.editar-Btn-Lista-Post {
+    width: 27%;
+    background-color: #ffca2c;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 2%;
+    color: black;
+    border-radius: 5px;
+}
+.editar-Btn-Lista-Post:hover{
+    color: black;
+    background-color: #ebba29;
+}

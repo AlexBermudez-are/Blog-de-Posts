@@ -1,0 +1,110 @@
+.btn-Cerrar-Form {
+    height: 45px;
+    position: absolute;
+    top: 32%;
+    z-index: 999;
+    margin-left: 60%;
+}
+
+.div-Padre-Form {
+    width: 30%;
+    position: absolute;
+    top: 15%;
+    z-index: 998;
+}
+
+.form-Sesion {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 115%;
+    background-color: white;
+}
+
+.contenedor-Form-Sesion {
+    padding-top: 2rem;
+    height: 400px;
+    border: 5px solid darkturquoise
+}
+
+.contenido-Form-Sesion {
+    padding-top: 10%;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+@media(max-width:1024px){
+    .btn-Cerrar-Form {
+        height: 45px;
+        position: absolute;
+        top: 35%;
+        z-index: 999;
+        margin-left: 16%;
+    }
+    .form-Sesion {
+        position: absolute;
+        width: 50%;
+        top: 100px;
+        left: 25%;
+        background-color: white;
+    }
+    .div-Padre-Form {
+        width: 100%;
+        position: absolute;
+        top: 15%;
+        z-index: 998;
+    }
+}
+
+@media(max-width:768px){
+    .btn-Cerrar-Form {
+        height: 40px;
+        position: absolute;
+        top: 35%;
+        z-index: 999;
+        margin-left: 15%;
+    }
+    .div-Padre-Form {
+        width: 45%;
+        position: absolute;
+        top: 15%;
+        z-index: 998;
+    }
+    .form-Sesion {
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        left: 65%;
+        background-color: white;
+    }
+}
+
+@media(max-width:425px) {
+    .btn-Cerrar-Form {
+        height: 38px;
+        position: absolute;
+        top: 34%;
+        z-index: 999;
+        margin-left: 25%;
+    }
+    .div-Padre-Form {
+        width: 100%;
+        position: absolute;
+        top: 15%;
+        z-index: 998;
+    }
+    .form-Sesion {
+        position: absolute;
+        width: 90%;
+        top: 100px;
+        left: 5%;
+        background-color: white;
+    }
+    .contenedor-Form-Sesion {
+        padding-top: 2rem;
+        height: 350px;
+        border: 5px solid darkturquoise
+    }
+}
