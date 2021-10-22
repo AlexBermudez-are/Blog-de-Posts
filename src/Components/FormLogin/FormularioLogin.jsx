@@ -7,8 +7,7 @@ import axios from 'axios';
 import './FormularioLogin.css'
 import { LoginContext } from '../../Context/LoginProvider';
 
-const token = (props) => {
-    localStorage.setItem("token", 1226195731181241)
+const alInicio = (props) => {
     const { history } = props;
     history.push('/')
 }
@@ -57,7 +56,9 @@ const FormularioLogin = (props) => (
                     password: values.password
                 })
                     .then(res => {
-                        token(props)
+                        const tokenA = res.data
+                        localStorage.setItem('token', tokenA.token)
+                        alInicio(props)
                         resetForm()
                     })
                     .catch(err => {
