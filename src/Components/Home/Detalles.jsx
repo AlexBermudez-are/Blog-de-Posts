@@ -14,7 +14,7 @@ const Detalles = ({ detalles, setdetalles, datos }) => {
     return (
         <div className='padre-Detalles-Container' ref={detallesRef}>
             <div onClick={() => { setdetalles(false) }} className='btn-Detalles'>x</div>
-            {datos.id ? <p>{datos.body}</p> : <p style={{color:"red"}}>Error 404</p> }
+            {datos.id ? <p className='datos-Detalles'>{datos.body}</p> : <p style={{color:"red"}}>Error 404</p> }
         </div>
     )
 }

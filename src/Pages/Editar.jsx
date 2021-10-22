@@ -1,9 +1,12 @@
 import React from 'react'
+import BodyEdit from '../Components/Edit/BodyEdit'
+import HeaderEdit from '../Components/Edit/HeaderEdit'
 
 const Editar = () => {
     return (
         <div>
-            <h1>xd</h1>
+            <HeaderEdit />
+            <BodyEdit />
         </div>
     )
 }

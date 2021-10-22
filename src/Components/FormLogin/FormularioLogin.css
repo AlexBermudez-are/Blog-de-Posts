@@ -41,7 +41,7 @@
         position: absolute;
         top: 35%;
         z-index: 999;
-        margin-left: 16%;
+        margin-left: 66%;
     }
     .form-Sesion {
         position: absolute;
@@ -62,9 +62,9 @@
     .btn-Cerrar-Form {
         height: 40px;
         position: absolute;
-        top: 35%;
+        top: 34%;
         z-index: 999;
-        margin-left: 15%;
+        margin-left: 66%;
     }
     .div-Padre-Form {
         width: 45%;
@@ -87,7 +87,7 @@
         position: absolute;
         top: 34%;
         z-index: 999;
-        margin-left: 25%;
+        margin-left: 80%;
     }
     .div-Padre-Form {
         width: 100%;
@@ -106,5 +106,10 @@
         padding-top: 2rem;
         height: 350px;
         border: 5px solid darkturquoise
+    }
+}
+@media(max-width:320px){
+    .btn-Cerrar-Form{
+        margin-left: 77%;
     }
 }

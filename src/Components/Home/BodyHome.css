@@ -5,3 +5,22 @@
     row-gap: .5%;
     padding-top: 5%;
 }
+
+@media(max-width:1024px) {
+    .listado-De-Post {
+        padding-left: 2%;
+    }
+}
+
+@media(max-width:425px) {
+    .listado-De-Post {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:320px) {
+    .listado-De-Post {
+        display: flex;
+        flex-direction: column;
+    }
+}

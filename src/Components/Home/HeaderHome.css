@@ -3,11 +3,13 @@
     width: 100%;
     justify-content: space-between;
 }
-.logo-Link-To-Home{
+
+.logo-Link-To-Home {
     width: 20%;
     padding-left: 3%;
     padding-top: 1%;
 }
+
 .logo-Header-Home {
     width: 100%;
 }
@@ -25,7 +27,33 @@
     font-size: 1.2rem;
     margin-top: 3%;
 }
-.link-Header-Home:hover{
-    color:white;
+
+.link-Header-Home:hover {
+    color: white;
     background-color: rgb(110, 94, 175);
+}
+
+@media(max-width:1024px) {
+    .link-Header-Home {
+        width: 20%;
+    }
+}
+@media(max-width:768px){
+    .logo-Link-To-Home{
+        width: 30%;
+    }
+    .link-Header-Home{
+        width: 26%;
+    }
+}
+@media(max-width:425px){
+    .logo-Link-To-Home{
+        width: 43%;
+    }
+    .link-Header-Home{
+        width: 47%;
+    }
+    .link-Header-Home{
+        font-size: 15px;
+    }
 }

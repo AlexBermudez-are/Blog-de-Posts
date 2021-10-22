@@ -1,12 +1,10 @@
-import './HeaderHome.css'
 import React, { useContext, useEffect } from 'react'
-import alkemyLogo from '../../Assets/alkemy_logo_black.png'
 import { NavLink } from 'react-router-dom'
-import { LoginContext } from '../../Context/LoginProvider'
 import FormularioLogin, { Datos } from '../FormLogin/FormularioLogin'
+import alkemyLogo from '../../Assets/alkemy_logo_black.png'
+import { LoginContext } from '../../Context/LoginProvider'
 
-const HeaderHome = () => {
-
+const HeaderEdit = () => {
     let token = localStorage.getItem("token")
     const { controllForm, controladorFormF } = useContext(LoginContext)
 
@@ -28,7 +26,6 @@ const HeaderHome = () => {
                 <NavLink className="logo-Link-To-Home" exact to="/">
                     <img className="logo-Header-Home" src={alkemyLogo} alt="logo_Alkemy" />
                 </NavLink>
-                <NavLink className="link-Header-Home" exact to="/crearpost">Crea un nuevo post</NavLink>
             </section>
             <div onClick={cerrarForm}>
                 {
@@ -42,4 +39,4 @@ const HeaderHome = () => {
     )
 }
 
-export default HeaderHome
+export default HeaderEdit

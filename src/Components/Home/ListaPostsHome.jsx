@@ -9,7 +9,7 @@ const ListaPostsHome = ({ datos, eliminarPostsContext }) => {
 
     const [detalles, setdetalles] = useState(false)
     const id = datos.id
-    
+
     const eliminarPost = () => {
         eliminarPostsContext(datos)
     }
@@ -20,14 +20,13 @@ const ListaPostsHome = ({ datos, eliminarPostsContext }) => {
             <Card
                 bg={'primary'}
                 text={'white'}
-                style={{ width: '20rem', height: '12rem' }}
-                className="mb-2"
+                className="card-Home-Post"
             >
                 <Card.Body className='body-Card-Lista-Post'>
                     <Card.Title className='card-Title-Lista-Post'>{datos.title}</Card.Title>
                     <div className='container-Btns-Post-Lista'>
-                        <Button variant='danger' onClick={eliminarPost}>Elminar</Button>
-                        <Button variant="info" onClick={(e) => { setdetalles(true) }}>Detalles</Button>
+                        <Button className='eliminar-Btn-Lista-Post' variant='danger' onClick={eliminarPost}>Elminar</Button>
+                        <Button className='detalles-Btn-Lista-Post' variant="info" onClick={(e) => { setdetalles(true) }}>Detalles</Button>
                         <NavLink className='editar-Btn-Lista-Post' to={`/editar/${id}`}>Editar</NavLink>
                     </div>
                 </Card.Body>

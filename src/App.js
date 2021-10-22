@@ -3,6 +3,7 @@ import Home from "./Pages/Home";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Editar from "./Pages/Editar";
 import LoginProvider from "./Context/LoginProvider";
+import CrearPost from "./Pages/CrearPost";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Switch>
           <LoginProvider>
             <Route exact path="/" component={Home} />
+            <Route exact path="/crearpost" component={CrearPost} />
             <Route exact path="/editar/:id" component={Editar} />
           </LoginProvider>
         </Switch>

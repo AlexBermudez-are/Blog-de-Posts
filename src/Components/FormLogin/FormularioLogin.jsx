@@ -59,7 +59,6 @@ const FormularioLogin = (props) => (
                     .then(res => {
                         token(props)
                         resetForm()
-                        console.log(props);
                     })
                     .catch(err => {
                         if (err.response) {
